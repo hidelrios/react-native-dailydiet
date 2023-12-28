@@ -5,6 +5,8 @@ import { useFonts, NunitoSans_400Regular, NunitoSans_700Bold } from '@expo-googl
 import { Loading } from '@components/Loading';
 import { Statistic } from '@screens/Statistic';
 import { Home } from '@screens/Home';
+import { Meals } from '@screens/Meals';
+import { Feedback } from '@screens/Feedback';
 
 
 export default function App() {
@@ -18,7 +20,7 @@ export default function App() {
         translucent
       />
       
-      {fontsLoader ? <Statistic/> : <Loading />}
+      {fontsLoader ? <Feedback/> : <Loading />}
     </ThemeProvider>
   );
 }

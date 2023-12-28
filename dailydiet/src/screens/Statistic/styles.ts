@@ -9,9 +9,12 @@ type Props = {
   type: StyleProps;
 };
 
-export const Container = styled(SafeAreaView)`
+export const Container = styled(SafeAreaView)<Props>`
   flex: 1;
-  /* background-color: ${() => useTheme().COLORS.GREEN_LIGHT}; */
+  background-color: ${({ type }) =>
+    type === "PRIMARY"
+      ? useTheme().COLORS.GREEN_LIGHT
+      : useTheme().COLORS.RED_LIGHT};
 `;
 
 export const Header = styled.View<Props>`

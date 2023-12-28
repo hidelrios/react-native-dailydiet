@@ -18,7 +18,6 @@ import { Plus } from "phosphor-react-native";
 import { CardMeal } from "@components/CardMeal";
 import { CardPercent } from "@components/CardPercent";
 
-
 export function Home() {
   return (
     <Container>
@@ -32,7 +31,6 @@ export function Home() {
         description="das refeições dentro da dieta"
         type="PRIMARY"
       />
-
 
       <ContainerNewMeals>
         <TitleNewMeals>Refeições</TitleNewMeals>

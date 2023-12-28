@@ -19,9 +19,9 @@ interface Props {
   type?: StyleProps;
 }
 
-export function Statistic({type = "SECONDARY"}: Props) {
+export function Statistic({type = "PRIMARY"}: Props) {
   return (
-    <Container>
+    <Container type={type}>
       <Header type={type}>
         <ContainerIconBack>
           {type === "PRIMARY" && (
